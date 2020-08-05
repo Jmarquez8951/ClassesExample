@@ -20,8 +20,7 @@ namespace ClassesExample
             Console.WriteLine($"{chicken.Name} and {bob.Name} are chickens....");
 
             var llama = new Llama(3, "blue");
-
-            llama.Color = "Teal";
+            llama.Dye("teal");
 
         }
     }
