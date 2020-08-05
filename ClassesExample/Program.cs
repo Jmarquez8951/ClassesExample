@@ -14,14 +14,29 @@ namespace ClassesExample
             chicken.Peck("corn");
             chicken.Peck("corn");
             chicken.Peck("corn");
+
             bob.Peck();
-            bob.Peck("watermelon");
 
             Console.WriteLine($"{chicken.Name} and {bob.Name} are chickens....");
 
             var llama = new Llama(3, "blue");
             llama.Dye("teal");
 
+            //object initializer
+            var cat = new Cat()
+            {
+                IsFeral = true,
+                Color = CatColor.Tabby,
+                BestFriend = bob
+            };
+            
+            cat.Color = CatColor.Tabby;
+            cat.Dye(CatColor.White);
+            cat.BestFriend = bob;
+            cat.HaveASnack();
+
+
+            Console.WriteLine($"The cat is {cat.Color}.");
         }
     }
 }
